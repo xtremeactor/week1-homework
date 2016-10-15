@@ -59,7 +59,7 @@ class NewItem: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBAction func saveItem(_ sender: AnyObject) {
        
      
-        let name = textField.text!
+        let name = textField.text!.lowercased()
         let todaysDate = NSDate()
         let dateFormat = DateFormatter()
         
