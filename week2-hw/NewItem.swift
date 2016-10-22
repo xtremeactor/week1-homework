@@ -8,7 +8,7 @@
 
 import UIKit
 
-var key = "mykey"
+
 
 class NewItem: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
@@ -46,7 +46,7 @@ class NewItem: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
                 
         
     }
-    var meal: ToDoItem?
+    var meal: ToDoItem!
     
     var categoryChoice: String!
     
@@ -57,8 +57,8 @@ class NewItem: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     
     @IBAction func saveItem(_ sender: AnyObject) {
-       
      
+        
         let name = textField.text!.lowercased()
         let todaysDate = NSDate()
         let dateFormat = DateFormatter()
@@ -73,18 +73,21 @@ class NewItem: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         
         list.append(meal!)
         
- 
+       // let userDefaults = UserDefaults.standard
+      //  userDefaults.set(list, forKey: "hi")
+        
+        
+       // userDefaults.synchronize()
+        
+     //   print(list)
+    
         
         self.performSegue(withIdentifier: "unwindToMenu", sender: self)
         
-
-    
+        
     }
     
  
-    
-    
-    
     
     var categories = ["low", "medium", "high"]
     
@@ -115,12 +118,6 @@ class NewItem: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         super.viewDidLoad()
         myPicker.dataSource = self
         myPicker.delegate = self
-    
-    
-    
-    
 
 }
 }
-
-

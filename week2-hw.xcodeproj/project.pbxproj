@@ -10,6 +10,9 @@
 		7D1B0E671DAEF49200747199 /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B0E661DAEF49200747199 /* ToDoList.swift */; };
 		7D1B0E6A1DAF029000747199 /* Table Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B0E691DAF029000747199 /* Table Cell.swift */; };
 		7D508F1D1DADB5330033915A /* NewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D508F1C1DADB5330033915A /* NewItem.swift */; };
+		7D8A47D81DB9CAD500BE2E9B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8A47D71DB9CAD500BE2E9B /* ListViewController.swift */; };
+		7D8A47DA1DBACD5600BE2E9B /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8A47D91DBACD5600BE2E9B /* GridViewController.swift */; };
+		7D8A47DC1DBACE6D00BE2E9B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8A47DB1DBACE6D00BE2E9B /* CollectionViewCell.swift */; };
 		7DF8D2851DADB2D3004D708C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8D2841DADB2D3004D708C /* AppDelegate.swift */; };
 		7DF8D2871DADB2D3004D708C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8D2861DADB2D3004D708C /* ViewController.swift */; };
 		7DF8D28A1DADB2D3004D708C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DF8D2881DADB2D3004D708C /* Main.storyboard */; };
@@ -40,6 +43,9 @@
 		7D1B0E661DAEF49200747199 /* ToDoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
 		7D1B0E691DAF029000747199 /* Table Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Table Cell.swift"; sourceTree = "<group>"; };
 		7D508F1C1DADB5330033915A /* NewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItem.swift; sourceTree = "<group>"; };
+		7D8A47D71DB9CAD500BE2E9B /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		7D8A47D91DBACD5600BE2E9B /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		7D8A47DB1DBACE6D00BE2E9B /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		7DF8D2811DADB2D3004D708C /* week2-hw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "week2-hw.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DF8D2841DADB2D3004D708C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DF8D2861DADB2D3004D708C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				7D1B0E691DAF029000747199 /* Table Cell.swift */,
+				7D8A47DB1DBACE6D00BE2E9B /* CollectionViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -92,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				7DF8D2861DADB2D3004D708C /* ViewController.swift */,
+				7D8A47D71DB9CAD500BE2E9B /* ListViewController.swift */,
+				7D8A47D91DBACD5600BE2E9B /* GridViewController.swift */,
 				7D508F1C1DADB5330033915A /* NewItem.swift */,
 			);
 			name = Controller;
@@ -293,6 +302,9 @@
 			files = (
 				7D508F1D1DADB5330033915A /* NewItem.swift in Sources */,
 				7DF8D2871DADB2D3004D708C /* ViewController.swift in Sources */,
+				7D8A47DC1DBACE6D00BE2E9B /* CollectionViewCell.swift in Sources */,
+				7D8A47D81DB9CAD500BE2E9B /* ListViewController.swift in Sources */,
+				7D8A47DA1DBACD5600BE2E9B /* GridViewController.swift in Sources */,
 				7D1B0E6A1DAF029000747199 /* Table Cell.swift in Sources */,
 				7DF8D2851DADB2D3004D708C /* AppDelegate.swift in Sources */,
 				7D1B0E671DAEF49200747199 /* ToDoList.swift in Sources */,
