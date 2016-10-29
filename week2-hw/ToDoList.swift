@@ -7,22 +7,29 @@
 //
 
 import Foundation
+// import RealmSwift
 
-class ToDoItem {
+class ToDoList {
     
     var item: String!
-   // var category: String!
     var date: String!
-    var category: String!
+    var category: String?
     
-    init(item: String, date: String, category: String) {
+   //  var owner: Person?
+    var belongsTo: String?
+    
+   /* init(item: String, date: String, category: String?) {
         
         self.item = item
-        //self.category = category
         self.date = date
         self.category = category
-        
     }
-    
+  */
     
 }
+
+
+
+
+// create a model file where you can add array
+// Create new field called owner

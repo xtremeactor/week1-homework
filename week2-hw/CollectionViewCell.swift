@@ -18,5 +18,6 @@ class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var categoryLabel: UILabel!
     
+    @IBOutlet var ownerLabel: UILabel!
     
 }

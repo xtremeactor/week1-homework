@@ -7,8 +7,11 @@
 //
 
 import UIKit
+// import RealmSwift
+// import Alamofire
 
-var list = [ToDoItem]()
+
+var list = [ToDoList]()
 
 class ViewController: UIViewController {
 
@@ -29,7 +32,9 @@ class ViewController: UIViewController {
             listView.isHidden = true
         gridView.isHidden = false
             }
-      
+        
+
+
     }
     
 
@@ -44,14 +49,19 @@ class ViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.automaticallyAdjustsScrollViewInsets = false
+    
+        /* let realm = try! Realm()
+        let toDoItems = realm.objects(ToDoItem.self)
+        print("I have no \(toDoItems)")
        
       //  list = userDefaults.object(forKey: "hi")! as! Array
  
-        
+        */ 
         // Do any additional setup after loading the view.
     }
 
+
+    
     
     override func viewDidAppear(_ animated: Bool) {
     

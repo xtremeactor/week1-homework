@@ -7,6 +7,7 @@
 //
 
 import UIKit
+// import RealmSwift
 
 class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -19,7 +20,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "list", for: indexPath) as! item
+        let cell = tableView.dequeueReusableCell(withIdentifier: "list", for: indexPath) as! TableCell
         
         
         let meal = list[indexPath.row]
@@ -27,6 +28,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.itemLabel.text = meal.item
         cell.dateLabel.text = meal.date
         cell.categoryLabel.text = meal.category
+        cell.ownerLabel.text = meal.belongsTo
         
         
         // Configure the cell...
@@ -43,20 +45,22 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
 
-
+    override func viewDidAppear(_ animated: Bool) {
+        tablView.reloadData()
+    }
+    
     override func viewDidLoad() {
         tablView.reloadData()
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        tablView.reloadData()
-    }
+  }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    }  
+/*     let realm = try! Realm()
+ let toDoItems = realm.objects(ToDoItem.self)
+ print("I have \(toDoItems.first?.item)")
+ // Do any additional setup after loading the view.
+ }
+ */
+
